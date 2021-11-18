@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>To find area of the square with JSP</title>
+</head>
+<body>
+<h1>Area of the Square</h1>
+<img src="img.jpg" height="200px">
+<p><b>Formula: </b>A = s<sup>2</sup></p>
+<form action="main.jsp" method="GET">
+<h3>Enter value of one side of the Square</h3>
+<input type="number" name="value" placeholder="Enter Value" required>
+<button type="submit">Submit</button>
+</form>
+</body
+</html>
+
+
+<html>
+<head>
+<title>To find area of the square with JSP</title>
+</head>
+<body>
+<h1>Area of the Square</h1>
+<img src="img.jpg" height="200px">
+<p><b>Formula: </b>A = s<sup>2</sup></p>
+<%= "<p><b>Solution =</b>A = s<sup>2</sup> = <b>"+Integer.parseInt(request.getParameter("value"))+"</b><sup>2</sup></p>"%>
+<%= "<h1>The area of the square is:  "+(Integer.parseInt(request.getParameter("value"))*2)+"</h1>"%>
+</body
+</html>
