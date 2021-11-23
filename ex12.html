@@ -1,3 +1,4 @@
+<!-- index.html -->
 <html>
 <body>
 <form action = "main.jsp" method = "GET">
@@ -10,7 +11,7 @@ Last Name: <input type = "text" name = "last_name" />
 </html>
 
 
-
+<!-- main.jsp -->
 <%  
    Cookie firstName = new Cookie("first_name", request.getParameter("first_name"));
    Cookie lastName = new Cookie("last_name", request.getParameter("last_name"));
