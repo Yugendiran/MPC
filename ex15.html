@@ -1,23 +1,35 @@
+<!-- index.html -->
 <html>
-<head>
-<title>
-No of times mouse move over a link
-</title>
-</head>
-<body>
-<form name="form1">
-<a href="a.html" name="link" onmouseover="Count1()">link</a>
-<p>
-<b>No of Mouse Move Over Link</b>
-<input type="text"name="txt"></input>
-</form>
-<script>
-let c = 0;
-function Count1(){
-c++;
-form1.txt.value=c;
-alert(c);
-}
-</script>
-</body>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form action="main.jsp" method="post">
+            USERNAME: <input type="text" name="uname" />
+            <br />
+            PASSWORD: <input type="password" name="upass" />
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
+<!-- mian.html -->
+<html>
+    <body>
+        <% String a = (String)request.getParameter("uname"); 
+           String b = (String)request.getParameter("upass"); 
+           
+           if(a.equals("yugi")){ 
+               if(b.equals("yugiyugi")){ 
+                   out.println("Success logged in"); 
+               }else{ 
+                   out.println("Please check pass"); 
+               } 
+           }else{ 
+               out.println("Please check login id"); 
+           } 
+           
+           %>
+    </body>
 </html>
