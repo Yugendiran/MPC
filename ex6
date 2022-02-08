@@ -1,0 +1,44 @@
+<!-- index.html -->
+<html>
+    <head>
+        <title>Frames</title>
+    </head>
+    <frameset rows="10%, 10%, 10%, 10%">
+        <frame src="1.html" name="f1">
+        <frame src="about:blank" name="f2">
+        <frame src="about:blank" name="f3">
+        <frame src="about:blank" name="f4">
+    </frameset>
+</html>
+
+<!-- 1.html -->
+<html>
+    <body>
+        <ul>
+            <li onclick="parent.f2.location='2.html'" target="f2">Frame 1</li>
+            <li onclick="parent.f3.location='3.html'" target="f3">Frame 2</li>
+            <li onclick="parent.f4.location='4.html'" target="f4">Frame 3</li>
+        </ul>
+    </body>
+</html>
+
+<!-- 2.html -->
+<html>
+    <body>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" height="200px" />
+    </body>
+</html>
+
+<!-- 3.html -->
+<html>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem quas, magnam iste repudiandae voluptates! Voluptas inventore praesentium corporis non rerum minus debitis laboriosam consectetur sint reiciendis, amet alias obcaecati.</p>
+    </body>
+</html>
+
+<!-- 4.html -->
+<html>
+    <body>
+        <h1>sfjnjk</h1>
+    </body>
+</html>
